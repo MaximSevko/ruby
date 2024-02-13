@@ -9,8 +9,6 @@ def scrape_oz_by(category_url, num_of_products)
   # Output CSV file name
   filename = "output.csv"
 
-  i = 0
-
 
   doc = Nokogiri::HTML(URI.open(category_url))
  
