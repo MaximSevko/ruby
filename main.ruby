@@ -9,7 +9,6 @@ def scrape_oz_by(category_url, num_of_products)
   # Output CSV file name
   filename = "output.csv"
 
-
   doc = Nokogiri::HTML(URI.open(category_url))
  
   doc.xpath('//div[@class="product-card__title"]').each_with_index do |product, i|
